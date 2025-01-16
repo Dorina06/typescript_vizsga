@@ -1,5 +1,10 @@
 {
     "compilerOptions": {
+        "moduleResolution": "node",
+        "baseUrl": "./src",
+        "paths": {
+        "*": ["*"]
+        },
         "outDir": "./dist",
         "sourceMap": true,
         "noImplicitAny": true,
@@ -8,9 +13,11 @@
         "target": "ES6",
         "jsx": "react",
         "experimentalDecorators": true,
-        "emitDecoratorMetadata": true
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
     },
     "include": [
-        "./src/**/*"
+        "./src/**/*",
+        "tests/**/*"
     ]
 }
